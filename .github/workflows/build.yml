@@ -1,6 +1,54 @@
-name: Build ZMK firmware
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK Firmware
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install west & dependencies
+        run: |
+          pip install --upgrade pip
+          pip install west
+
+      - name: Initialize west and update modules
+        run: |
+          west init -l config
+          west update
+          west zephyr-export
+          pip install -r zephyr/scripts/requirements.txt
+
+      - name: Load build matrix
+        id: matrix
+        run: echo "build_matrix=$(yq -oj -I0 'config/build.yaml')" >> $GITHUB_ENV
+
+      - name: Build firmware
+        run: |
+          for row in $(echo $build_matrix | jq -c '.builds[]'); do
+            board=$(echo $row | jq -r '.board')
+            shield=$(echo $row | jq -r '.shield')
+            artifact_name="${shield}-${board}"
+            echo "Building $artifact_name..."
+            west build -s zmk/app -b $board -- -DZMK_CONFIG=$(pwd)/config -DSHIELD=$shield
+            mkdir -p firmware
+            cp build/zephyr/zmk.uf2 firmware/${artifact_name}.uf2 || true
+          done
+
+      - name: Upload firmware artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: firmware
