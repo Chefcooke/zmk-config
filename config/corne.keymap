@@ -61,10 +61,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans           &kp NUMBER_4           &kp N5              &kp NUMBER_6             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7                      &kp N8              &kp N9                    &kp N0               &trans
-&trans  &mt LEFT_GUI N0  &mt LEFT_ALT NUMBER_1  &mt LCTRL NUMBER_2  &mt LEFT_SHIFT NUMBER_3  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT LEFT_ARROW  &mt RCTRL UP_ARROW  &mt RIGHT_ALT DOWN_ARROW  &mt RIGHT_GUI RIGHT  &trans
-&trans  &kp PERIOD       &kp N7                 &kp N8              &kp N9                   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp HOME                    &kp PG_UP           &kp PAGE_DOWN             &kp END              &trans
-                                                &trans              &trans                   &kp EQUAL               &trans                 &trans                      &trans
+&trans  &trans              &kp NUMBER_4              &kp N5                 &kp NUMBER_6             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7                      &kp N8                 &kp N9                       &kp N0                  &trans
+&trans  &Ht280 LEFT_GUI N0  &Ht280 LEFT_ALT NUMBER_1  &Ht280 LCTRL NUMBER_2  &mt LEFT_SHIFT NUMBER_3  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT LEFT_ARROW  &Ht280 RCTRL UP_ARROW  &Ht280 RIGHT_ALT DOWN_ARROW  &Ht280 RIGHT_GUI RIGHT  &trans
+&trans  &kp PERIOD          &kp N7                    &kp N8                 &kp N9                   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp HOME                    &kp PG_UP              &kp PAGE_DOWN                &kp END                 &trans
+                                                      &trans                 &trans                   &kp EQUAL               &trans                 &trans                      &trans
             >;
         };
 
