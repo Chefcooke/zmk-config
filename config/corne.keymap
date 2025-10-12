@@ -46,7 +46,7 @@
 &caps_word  &mt Z J            &mt Q G            &kp M           &kp P            &kp V      &mt AT_SIGN HASH     &mt COLON PERIOD  &mt ASTERISK SLASH  &mt EXCLAMATION DOUBLE_QUOTES  &mt QUESTION SQT    &trans
 &kp ESCAPE  &Ht280 LEFT_GUI C  &Ht280 LEFT_ALT S  &Ht280 LCTRL N  &mt LSHIFT T     &kp K      &mt SEMICOLON COMMA  &mt RSHIFT A      &Ht280 RCTRL E      &Ht280 RIGHT_ALT I             &Ht280 RIGHT_GUI H  &trans
 &trans      &kp X              &kp F              &kp L           &kp D            &kp W      &mt PLUS MINUS       &kp U             &kp O               &kp Y                          &kp B               &trans
-                                                  &kp DELETE      &lt 2 BACKSPACE  &lt 2 R    &lt 1 SPACE          &kp ENTER         &key_repeat
+                                                  &kp DELETE      &lt 3 BACKSPACE  &lt 2 R    &lt 1 SPACE          &kp ENTER         &key_repeat
             >;
         };
 
@@ -84,7 +84,7 @@
             >;
         };
 
-        layer_3 {
+        MACros {
             bindings = <
 &trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &kp LG(S)  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
