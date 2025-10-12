@@ -43,10 +43,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&caps_word  &mt Z J            &mt Q G            &kp M           &kp P          &kp V      &mt AT_SIGN HASH     &mt COLON PERIOD  &mt ASTERISK SLASH  &mt EXCLAMATION DOUBLE_QUOTES  &mt QUESTION SQT    &trans
-&kp ESCAPE  &Ht280 LEFT_GUI C  &Ht280 LEFT_ALT S  &Ht280 LCTRL N  &mt LSHIFT T   &kp K      &mt SEMICOLON COMMA  &mt RSHIFT A      &Ht280 RCTRL E      &Ht280 RIGHT_ALT I             &Ht280 RIGHT_GUI H  &trans
-&trans      &kp X              &kp F              &kp L           &kp D          &kp W      &mt PLUS MINUS       &kp U             &kp O               &kp Y                          &kp B               &trans
-                                                  &kp DELETE      &kp BACKSPACE  &lt 2 R    &lt 1 SPACE          &kp ENTER         &key_repeat
+&caps_word  &mt Z J            &mt Q G            &kp M           &kp P            &kp V      &mt AT_SIGN HASH     &mt COLON PERIOD  &mt ASTERISK SLASH  &mt EXCLAMATION DOUBLE_QUOTES  &mt QUESTION SQT    &trans
+&kp ESCAPE  &Ht280 LEFT_GUI C  &Ht280 LEFT_ALT S  &Ht280 LCTRL N  &mt LSHIFT T     &kp K      &mt SEMICOLON COMMA  &mt RSHIFT A      &Ht280 RCTRL E      &Ht280 RIGHT_ALT I             &Ht280 RIGHT_GUI H  &trans
+&trans      &kp X              &kp F              &kp L           &kp D            &kp W      &mt PLUS MINUS       &kp U             &kp O               &kp Y                          &kp B               &trans
+                                                  &kp DELETE      &lt 2 BACKSPACE  &lt 2 R    &lt 1 SPACE          &kp ENTER         &key_repeat
             >;
         };
 
@@ -81,6 +81,15 @@
 &kp C_MUTE       &kp F10  &kp F1  &kp F2  &kp F3  &kp AMPS     &kp PIPE       &kp LESS_THAN     &trans          &trans  &bt BT_SEL 4  &bt BT_SEL 1
 &kp C_VOL_DN     &kp F12  &kp F7  &kp F8  &kp F9  &kp TILDE    &kp BACKSLASH  &trans            &trans          &trans  &trans        &bt BT_SEL 2
                                   &trans  &trans  &trans       &trans         &trans            &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LG(S)  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans     &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
