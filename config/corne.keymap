@@ -86,10 +86,10 @@
 
         MACros {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp LG(S)  &trans     &kp LG(F)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans     &trans     &trans    &trans  &trans  &trans
+&trans  &trans         &trans     &trans     &trans     &kp LS(LG(NUMBER_3))    &trans  &trans              &trans            &trans              &trans               &trans
+&trans  &kp LS(LG(Z))  &kp LG(S)  &trans     &kp LG(F)  &kp LS(LG(NUMBER_4))    &trans  &kp LA(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &kp LA(RIGHT_ARROW)  &trans
+&trans  &kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans                  &trans  &trans              &trans            &trans              &trans               &trans
+                                  &trans     &trans     &trans                  &trans  &trans              &trans
             >;
         };
     };
