@@ -60,7 +60,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans              &kp NUMBER_4              &kp N5                 &kp NUMBER_6             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7                      &kp N8                 &kp N9                       &kp N0                  &trans
+&trans  &trans              &kp NUMBER_4              &kp N5                 &kp NUMBER_6             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp LA(LEFT_ARROW)          &kp LG(UP_ARROW)       &kp LG(DOWN_ARROW)           &kp LA(RIGHT_ARROW)     &trans
 &trans  &Ht280 LEFT_GUI N0  &Ht280 LEFT_ALT NUMBER_1  &Ht280 LCTRL NUMBER_2  &mt LEFT_SHIFT NUMBER_3  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT LEFT_ARROW  &Ht280 RCTRL UP_ARROW  &Ht280 RIGHT_ALT DOWN_ARROW  &Ht280 RIGHT_GUI RIGHT  &trans
 &trans  &kp PERIOD          &kp N7                    &kp N8                 &kp N9                   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp HOME                    &kp PG_UP              &kp PAGE_DOWN                &kp END                 &trans
                                                       &trans                 &trans                   &kp EQUAL               &trans                 &trans                      &trans
@@ -86,10 +86,10 @@
 
         MACros {
             bindings = <
-&trans  &trans         &trans     &trans     &trans     &kp LS(LG(NUMBER_3))    &trans  &trans              &trans            &trans              &trans               &trans
-&trans  &kp LS(LG(Z))  &kp LG(S)  &trans     &kp LG(F)  &kp LS(LG(NUMBER_4))    &trans  &kp LA(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &kp LA(RIGHT_ARROW)  &trans
-&trans  &kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans                  &trans  &trans              &trans            &trans              &trans               &trans
-                                  &trans     &trans     &trans                  &trans  &trans              &trans
+&trans  &trans         &trans     &trans     &trans     &kp LS(LG(NUMBER_3))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LG(Z))  &kp LG(S)  &trans     &kp LG(F)  &kp LS(LG(NUMBER_4))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans     &trans     &trans                  &trans  &trans  &trans
             >;
         };
     };
