@@ -49,9 +49,9 @@
 
             bindings = <
 &caps_word  &mt Z J            &mt Q G            &kp M           &kp P            &kp V      &mt AT_SIGN HASH     &mt COLON PERIOD  &mt ASTERISK SLASH  &mt EXCLAMATION DOUBLE_QUOTES  &mt QUESTION SQT    &key_repeat
-&kp ESCAPE  &Ht280 LEFT_GUI C  &Ht280 LEFT_ALT S  &Ht280 LCTRL N  &mt LSHIFT T     &kp K      &mt SEMICOLON COMMA  &mt RSHIFT A      &Ht280 RCTRL E      &Ht280 RIGHT_ALT I             &Ht280 RIGHT_GUI H  &trans
+&kp ESCAPE  &Ht280 LEFT_GUI C  &Ht280 LEFT_ALT S  &Ht280 LCTRL N  &mt LSHIFT T     &kp K      &mt SEMICOLON COMMA  &mt RSHIFT A      &Ht280 RCTRL E      &Ht280 RIGHT_ALT I             &Ht280 RIGHT_GUI H  &kp TILDE
 &trans      &kp X              &kp F              &kp L           &kp D            &kp W      &mt PLUS MINUS       &kp U             &kp O               &kp Y                          &kp B               &trans
-                                                  &kp DELETE      &lt 3 BACKSPACE  &lt 2 R    &lt 1 SPACE          &kp ENTER         &key_repeat
+                                                  &kp DELETE      &lt 3 BACKSPACE  &lt 2 R    &lt 1 SPACE          &kp ENTER         &kp TAB
             >;
         };
 
@@ -65,10 +65,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans              &kp NUMBER_4              &kp N5                 &kp NUMBER_6             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp LA(LEFT_ARROW)          &kp LG(UP_ARROW)       &kp LG(DOWN_ARROW)           &kp LA(RIGHT_ARROW)     &trans
-&trans  &Ht280 LEFT_GUI N0  &Ht280 LEFT_ALT NUMBER_1  &Ht280 LCTRL NUMBER_2  &mt LEFT_SHIFT NUMBER_3  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT LEFT_ARROW  &Ht280 RCTRL UP_ARROW  &Ht280 RIGHT_ALT DOWN_ARROW  &Ht280 RIGHT_GUI RIGHT  &trans
-&trans  &kp PERIOD          &kp N7                    &kp N8                 &kp N9                   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp HOME                    &kp PG_UP              &kp PAGE_DOWN                &kp END                 &trans
-                                                      &trans                 &trans                   &kp EQUAL               &trans                 &trans                      &trans
+&kp PLUS    &kp KP_MULTIPLY     &kp NUMBER_4              &kp N5                 &kp NUMBER_6             &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp LA(LEFT_ARROW)          &kp LG(UP_ARROW)       &kp LG(DOWN_ARROW)           &kp LA(RIGHT_ARROW)     &trans
+&kp PERIOD  &Ht280 LEFT_GUI N0  &Ht280 LEFT_ALT NUMBER_1  &Ht280 LCTRL NUMBER_2  &mt LEFT_SHIFT NUMBER_3  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT LEFT_ARROW  &Ht280 RCTRL UP_ARROW  &Ht280 RIGHT_ALT DOWN_ARROW  &Ht280 RIGHT_GUI RIGHT  &trans
+&kp MINUS   &kp KP_DIVIDE       &kp N7                    &kp N8                 &kp N9                   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp HOME                    &kp PG_UP              &kp PAGE_DOWN                &kp END                 &trans
+                                                          &trans                 &trans                   &kp EQUAL               &trans                 &trans                      &trans
             >;
         };
 
@@ -82,9 +82,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp C_VOLUME_UP  &kp F11  &kp F4  &kp F5  &kp F6  &kp PRCNT    &kp SLASH      &kp GREATER_THAN  &kp LS(LA(N8))  &trans  &bt BT_SEL 3  &bt BT_SEL 0
-&kp C_MUTE       &kp F10  &kp F1  &kp F2  &kp F3  &kp AMPS     &kp PIPE       &kp LESS_THAN     &trans          &trans  &bt BT_SEL 4  &bt BT_SEL 1
-&kp C_VOL_DN     &kp F12  &kp F7  &kp F8  &kp F9  &kp TILDE    &kp BACKSLASH  &trans            &trans          &trans  &trans        &bt BT_SEL 2
+&kp C_VOLUME_UP  &kp F11  &kp F4  &kp F5  &kp F6  &kp PRCNT    &kp SLASH      &kp GREATER_THAN  &trans  &trans  &bt BT_SEL 3  &bt BT_SEL 0
+&kp C_MUTE       &kp F10  &kp F1  &kp F2  &kp F3  &trans       &kp PIPE       &kp LS(LA(N8))    &trans  &trans  &bt BT_SEL 4  &bt BT_SEL 1
+&kp C_VOL_DN     &kp F12  &kp F7  &kp F8  &kp F9  &trans       &kp BACKSLASH  &kp LESS_THAN     &trans  &trans  &trans        &bt BT_SEL 2
                                   &trans  &trans  &trans       &trans         &trans            &trans
             >;
         };
@@ -93,7 +93,7 @@
             bindings = <
 &trans  &trans         &trans     &trans     &trans     &kp LS(LG(NUMBER_3))    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(LG(Z))  &kp LG(S)  &trans     &kp LG(F)  &kp LS(LG(NUMBER_4))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(LA(V)))       &trans  &trans  &trans  &trans  &trans  &trans
                                   &trans     &trans     &trans                  &trans  &trans  &trans
             >;
         };
